@@ -11,7 +11,7 @@ stock antiDamage(playerid, Float:amount){
     GetPlayerHealth(playerid,life[0]);
     GetPlayerArmour(playerid,life[1]);
 
-    if(life[1] <= 0.0) SetPlayerHealth(playerid,(life[1]+amount));
+    if(life[1] <= 0.0) SetPlayerHealth(playerid,(life[0]+amount));
 
     else if(life[1] < amount) SetPlayerHealth(playerid, 100.0), SetPlayerArmour(playerid,(life[0]+amount)-100);
     else SetPlayerArmour(playerid, life[1]+amount);
