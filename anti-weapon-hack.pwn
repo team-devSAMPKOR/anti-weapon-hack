@@ -18,10 +18,10 @@ stock antiDamage(playerid, Float:amount){
 }
 
 stock isRejectWeapon(weaponid){
-	new result;
-	switch(weaponid){
-	    case 18,35,36,37,38 : result =1;
-	    default : result =0;
-	}
-	return result;
+    new result;
+    switch(weaponid){
+        case 18,35,36,37,38 : result =1;
+        default : result =0;
+    }
+    return result;
 }
